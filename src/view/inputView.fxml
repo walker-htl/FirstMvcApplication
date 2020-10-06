@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="590.0"
+          xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InputController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="159.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="202.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="205.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" prefHeight="44.0" prefWidth="616.0" text="Add names" textAlignment="CENTER" GridPane.columnSpan="3">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="246.0" text="Firstname" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="126.0" prefHeight="30.0" prefWidth="246.0" text="Secondname" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField id="firstNameField" fx:id="firstNameField" prefHeight="40.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="secondNameField" fx:id="secondNameField" layoutX="203.0" layoutY="128.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button id="addButton" fx:id="addButton" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="31.0" prefWidth="182.0" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button id="showAllButton" fx:id="showAllButton" layoutX="193.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleShowAllButton" prefHeight="33.0" prefWidth="173.0" text="Show all" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
